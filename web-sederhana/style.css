@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+body{
+	font:16px/20px arial, sans-serif;
+	background-color: #eaeaea;
+	color: #333333;
+}
+
+
+
+
+.container{
+width: 800px;
+margin:auto;
+
+background-color: #ffffff;
+}
+
+.header{
+	display:block;
+	background-color:;
+	padding-left: 15px;
+	}
+
+li{
+	margin-left: 15px;
+}
+.header ul li{
+	display: inline-block;
+	margin-top: 20px;
+	margin-right:10px;
+	margin-bottom:7px;
+}
+
+.header a{
+	padding:3px;
+	color:salmon;
+}
+
+.header a:hover
+{
+	background-color: skyblue;
+	color:white;
+}
+
+.hero{
+	background-image: url(gambar1.jpg);
+	background-size: cover;
+	display:block;
+	height:280px;
+	background-color: grey;
+	background-position: 0 -10px;
+	border-top: 2px solid salmon;
+}
+
+.header .judul{
+	margin:0px;
+	padding-top: 14px;
+	padding-left: 15px;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+.judulartikel h1{
+	padding-bottom: 0px;
+}
+.judulartikel{
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom:0px;
+
+}
+
+.metadata{
+font-size: 10px;
+padding-left: 15px;
+
+}
+
+.isi{
+	display:block;
+	background-color:;
+	padding:15px;
+}
+
+.footer{
+	background-color:#eaeaea;
+	
+}
+
+.footer h3{
+	margin: auto;
+	text-align: center;
+}
