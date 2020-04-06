@@ -1,0 +1,171 @@
+/*Font*/
+@font-face	{
+font-family: 'bebasneue';
+src:url(../fonts/bebasneue.woff) format('woff');
+}
+
+/*style utama*/
+
+.clear{
+	clear:both;
+
+}
+
+body{
+font:18px/36px 'bebasneue','Arial Narrow',arial,sans-sherif;
+background-color:#ddd; 
+}
+
+h1
+{
+	font-size: 80px;
+	margin: 50px;
+	text-align: center;
+	text-shadow: 1px 1px 1px white;
+
+}
+
+
+.container{
+	width:600px;
+	background-color: white;
+	box-shadow:  0 0 3px 3px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	margin:auto;
+	padding:30px;
+}
+
+
+.gallery li{
+	width:120px;
+	height:120px;
+	overflow: hidden;
+	border: 5px solid #666;
+	float:left;
+	margin-right: 20px;
+	position: relative;
+}
+
+.gallery li span{
+	display:block;
+	width: 120px;
+	height: 120px;
+	background-color: rgba(200,200,200,.5);
+	position: absolute;
+	top:0;
+	text-align: center;
+	line-height: 120px;
+	color: #333;
+	text-shadow: 1px 1px 1px #ddd;
+	opacity: 0;
+	transition: 0.3s;
+	transform: scale(0) rotate(0deg);
+}
+
+.gallery li a:hover span{
+
+opacity: 1;
+transform: scale(1) rotate(360deg);
+
+}
+
+
+.gallery li,
+.gallery li a img,
+.gallery li span
+{
+	border-radius: 50%
+}
+
+
+/*overlay*/
+
+.overlay
+{
+	width: 0px;
+	height: 0px;
+	position:fixed;
+	top: 0;
+	left: 0;
+	overflow:hidden;
+	background: rgba(0,0,0,.0);
+	z-index: 9999;
+	transition: 0.7s;
+	text-align: center;
+	padding:100px 0;
+
+}
+
+.overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.7);
+}
+
+.overlay img{
+	max-height: 100%;
+	box-shadow: 2px 2px 7px rgba(0,0,0,0.8);
+
+}
+
+.overlay .close
+{
+	position: absolute;
+	top:70px;
+	left:50%;
+	margin-left: -40px;
+	color: white;
+	text-decoration: none;
+	background-color: black;
+	border:1px solid white;
+	border-radius:10%; 
+	line-height: 14px;
+	padding: 5px;
+	opacity: 0;
+}
+.overlay:target img
+{
+	animation: zoomdanfade 1s;
+}
+
+.overlay:target	.close
+{
+	animation: slidedownfade .5s .5s forwards;
+
+}
+/*nav*/
+.next{
+
+}
+
+/*animasi*/
+
+@keyframes zoomdanfade
+{
+	0%
+	{
+		transform:scale(0);
+		opacity:0;
+	}
+	100%
+	{
+		transform: scale(1);
+		opacity:1;
+	}
+}
+
+@keyframes slidedownfade
+{
+	0%{
+		opacity: 0;
+		margin-top: -20px;
+
+	}
+	100%{
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+
